@@ -48,10 +48,10 @@ let config = {
 		},
 		{
 			module: "clock",
-			position: "top_center",
+			position: "top_left",
 			header: "India pt 2",
 			config: {
-				timeZone: "Asia/Kolkata|Asia/Calcutta",
+				timeZone: "Asia/Kolkata",
 				timeFormat: "12",
 			}
 		},
@@ -68,26 +68,26 @@ let config = {
 					}
 				]
 			}
-		},
-		{
-			module: "weather",
-			position: "top_right",
-			config: {
-				weatherProvider: "openmeteo",
-				type: "current",
-				locationID: "5096699"
-			}
-		},
-		{
-			module: "weather",
-			position: "top_right",
-			header: "Weather Forecast",
-			config: {
-				weatherProvider: "openmeteo",
-				type: "forecast",
+		}//,
+		// {
+		// 	module: "weather",
+		// 	position: "top_right",
+		// 	config: {
+		// 		weatherProvider: "openmeteo",
+		// 		type: "current",
+		// 		locationID: "5096699"
+		// 	}
+		// },
+		// {
+		// 	module: "weather",
+		// 	position: "top_right",
+		// 	header: "Weather Forecast",
+		// 	config: {
+		// 		weatherProvider: "openmeteo",
+		// 		type: "forecast",
 				
-			}
-		}
+		// 	}
+		// }
 	]
 };
 
