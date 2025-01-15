@@ -68,7 +68,7 @@ let config = {
 			position: "bottom_left"
 			config: {
 				timeZone: "Asia/Kolkata|Asia/Calcutta"
-			}
+			},
 		},
 		{
 			module: "weather",
