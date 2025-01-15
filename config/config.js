@@ -51,7 +51,7 @@ let config = {
 			position: "top_center",
 			header: "India",
 			config: {
-				timeZone: "Asia/Kolkata",
+				timeZone: "Asia/Kolkata|Asia/Calcutta",
 				timeFormat: "12",
 			}
 		},
