@@ -64,8 +64,11 @@ let config = {
 			}
 		},
 		{
-			module: "clock",
+			module: "clock2",
 			position: "bottom_left"
+			config: {
+				timeZone: "Asia/Kolkata|Asia/Calcutta"
+			}
 		},
 		{
 			module: "weather",
