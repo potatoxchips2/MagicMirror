@@ -64,8 +64,8 @@ let config = {
 			}
 		},
 		{
-			module: "compliments",
-			position: "lower_third"
+			module: "clock",
+			position: "bottom_left"
 		},
 		{
 			module: "weather",
@@ -86,22 +86,6 @@ let config = {
 				type: "forecast",
 				lat: 40.776676,
 				lon: -73.971321
-			}
-		},
-		{
-			module: "newsfeed",
-			position: "bottom_bar",
-			config: {
-				feeds: [
-					{
-						title: "New York Times",
-						url: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
-					}
-				],
-				showSourceTitle: true,
-				showPublishDate: true,
-				broadcastNewsFeeds: true,
-				broadcastNewsUpdates: true
 			}
 		},
 	]
