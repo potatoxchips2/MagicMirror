@@ -49,7 +49,7 @@ let config = {
 		{
 			module: "clock",
 			position: "top_center",
-			header: "India",
+			header: "India pt 2",
 			config: {
 				timeZone: "Asia/Kolkata|Asia/Calcutta",
 				timeFormat: "12",
