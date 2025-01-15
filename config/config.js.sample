@@ -39,15 +39,18 @@ let config = {
 
 	modules: [
 		{
-			module: "alert",
-		},
-		{
-			module: "updatenotification",
-			position: "top_bar"
+			module: "clock",
+			position: "top_left",
+			config: {
+				timeZone: "Asia/Kolkata" // Corrected configuration for timeZone
+			}
 		},
 		{
 			module: "clock",
-			position: "top_left"
+			position: "top_center",
+			config: {
+				timeZone: "Asia/Kolkata" // Corrected configuration for timeZone
+			}
 		},
 		{
 			module: "calendar",
@@ -56,20 +59,13 @@ let config = {
 			config: {
 				calendars: [
 					{
-						fetchInterval: 7 * 24 * 60 * 60 * 1000,
+						fetchInterval: 7 * 24 * 60 * 60 * 1000, // Weekly fetch
 						symbol: "calendar-check",
 						url: "https://ics.calendarlabs.com/76/mm3137/US_Holidays.ics"
 					}
 				]
 			}
 		},
-		{
-    		module: "clock",
-    		position: "top_left", // This can be any of the regions.
-    		config: {
-				timeZone: "Asia/Kolkata",
-			},
-    	},
 		{
 			module: "weather",
 			position: "top_right",
@@ -90,7 +86,7 @@ let config = {
 				lat: 40.776676,
 				lon: -73.971321
 			}
-		},
+		}
 	]
 };
 
