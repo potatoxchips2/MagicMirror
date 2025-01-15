@@ -67,7 +67,7 @@ let config = {
     		module: "clock",
     		position: "top_left", // This can be any of the regions.
     		config: {
-				timeZone: "Asia/Kolkata"
+				timeZone: "Asia/Kolkata",
 			},
     	},
 		{
