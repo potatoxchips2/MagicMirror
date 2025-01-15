@@ -34,8 +34,8 @@ let config = {
 			   // see https://en.wikipedia.org/wiki/Locale_(computer_software) for the possibilities
 
 	logLevel: ["INFO", "LOG", "WARN", "ERROR"], // Add "DEBUG" for even more logging
-	timeFormat: 12,
-	units: "metric",
+	timeFormat: "12",
+	units: "imperial",
 
 	modules: [
 		{
@@ -43,15 +43,16 @@ let config = {
 			position: "top_left",
 			config: {
 				timeZone:"America/New_York",
-				timeFormat: 12,
+				timeFormat: "12",
 			}
 		},
 		{
 			module: "clock",
 			position: "top_center",
+			header: "India",
 			config: {
 				timeZone: "Asia/Kolkata",
-				timeFormat: 12,
+				timeFormat: "12",
 			}
 		},
 		{
@@ -84,8 +85,7 @@ let config = {
 			config: {
 				weatherProvider: "openmeteo",
 				type: "forecast",
-				lat: 40.776676,
-				lon: -73.971321
+				
 			}
 		}
 	]
