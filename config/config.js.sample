@@ -43,7 +43,6 @@ let config = {
 			position: "top_left",
 			config: {
 				timeZone:"America/New_York",
-				timeFormat: "12",
 			}
 		},
 		{
@@ -51,8 +50,7 @@ let config = {
 			position: "top_left",
 			header: "India pt 2",
 			config: {
-				timeZone: "Asia/Chita",
-				timeFormat: "12",
+				timeZone: "Asia/Chita"
 			}
 		},
 		{
@@ -68,8 +66,8 @@ let config = {
 					}
 				]
 			}
-		}//,
-		// {
+		},
+		{
 		// 	module: "weather",
 		// 	position: "top_right",
 		// 	config: {
@@ -86,8 +84,8 @@ let config = {
 		// 		weatherProvider: "openmeteo",
 		// 		type: "forecast",
 				
-		// 	}
-		// }
+			}
+		}
 	]
 };
 
