@@ -42,15 +42,15 @@ let config = {
 			module: "clock",
 			position: "top_left",
 			config: {
-				timeZone:"America/New_York",
+				timeZone:"America/New_York"
 			}
 		},
 		{
 			module: "clock",
 			position: "top_left",
-			header: "India pt 3",
+			header: "India pt 2",
 			config: {
-				timeZone: "America/Mexico_City",
+				timezone: "Asia/Tokyo"
 			}
 		},
 		{
