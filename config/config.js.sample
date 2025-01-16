@@ -48,7 +48,7 @@ let config = {
 		{
 			module: "clock",
 			position: "top_left",
-			header: "India pt 2",
+			header: "India pt 3",
 			config: {
 				timeZone: "America/Mexico_City",
 			}
