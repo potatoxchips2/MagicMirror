@@ -50,7 +50,7 @@ let config = {
 			position: "top_left",
 			header: "India pt 2",
 			config: {
-				timezone: "Asia/Tokyo"
+				timezone: "Asia/Kolkata"
 			}
 		},
 		{
