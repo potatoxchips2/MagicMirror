@@ -51,7 +51,7 @@ let config = {
 			position: "top_left",
 			header: "India pt 2",
 			config: {
-				timeZone: "Asia/Kolkata",
+				timeZone: "Asia/Chita",
 				timeFormat: "12",
 			}
 		},
