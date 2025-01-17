@@ -85,8 +85,8 @@ let config = {
 
 		},
 		{
-			module: "helloworld",
-			position: "bottom_center"
+			module: "compliments",
+			position: "lower_third"
 		},
 		{
 			module: "weather",
