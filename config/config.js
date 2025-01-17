@@ -85,6 +85,10 @@ let config = {
 
 		},
 		{
+			module: "helloworld",
+			position: "bottom_center"
+		},
+		{
 			module: "weather",
 			position: "top_right",
 			config: {
