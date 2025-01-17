@@ -1,3 +1,5 @@
+const { default: config } = require("../eslint.config.mjs");
+
 /* Config Sample
  *
  * For more information on how you can configure this file
@@ -66,6 +68,21 @@ let config = {
 					}
 				]
 			}
+		},
+		{
+			module: "gridcalender",
+			header: "Grid",
+			position: "top_center",
+			config: {
+				calendars: [
+					{
+						fetchInterval: 7 * 24 * 60 * 60 * 1000, // Weekly fetch
+						symbol: "calendar-check",
+						url: "https://ics.calendarlabs.com/76/mm3137/US_Holidays.ics"
+					}
+				]
+			}
+
 		},
 		{
 			module: "weather",

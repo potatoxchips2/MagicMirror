@@ -1,0 +1,56 @@
+name: Super-Linter
+
+# Run this workflow every time a new commit pushed to your repository
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+permissions:
+  statuses: write
+jobs:
+  # Set the job key. The key is displayed as the job name
+  # when a job name is not provided
+  build:
+    # Name the Job
+    name: Lint Code Base
+    # Set the type of machine to run on
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+      # To report GitHub Actions status checks
+      statuses: write
+
+    steps:
+      # Checks out a copy of your repository on the ubuntu-latest machine
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          # super-linter needs the full git history to get the
+          # list of files that changed across commits
+          fetch-depth: 0
+
+      - name: install modules
+        run: |
+          npm ci
+
+      # Runs the Super-Linter action
+      - name: Run Super-Linter
+        uses: super-linter/super-linter/slim@v6
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LINTER_RULES_PATH: /
+          JSCPD_CONFIG_FILE: .jscpd.json
+          YAML_CONFIG_FILE: .yamllint.yaml
+
+          VALIDATE_CSS: false
+          VALIDATE_JSON: false
+          VALIDATE_JAVASCRIPT_ES: false
+          VALIDATE_JAVASCRIPT_PRETTIER: false
+          VALIDATE_JAVASCRIPT_STANDARD: false
+
+          # Exclude symlinks because JSCPD has a problem with them
+          # (You could add nore using |. Like this: .*(docs/index.md|filex.js|.filey.yaml).*)
+          FILTER_REGEX_EXCLUDE: .*(docs[/]index.md|node_modules[/]).*
