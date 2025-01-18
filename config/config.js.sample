@@ -1,4 +1,4 @@
-const { default: config } = require("../eslint.config.mjs");
+//const { default: config } = require("../eslint.config.mjs");
 
 /* Config Sample
  *
