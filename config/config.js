@@ -54,6 +54,20 @@ let config = {
 			config: {
 				timezone: "Asia/Kolkata"
 			}
+		},  
+        {
+			module: "calendar",
+			header: "Birthdays",
+			position: "top_center",
+			config: {
+				calendars: [
+					{
+						fetchInterval: 7 * 24 * 60 * 60 * 1000, // Weekly fetch
+						symbol: "calendar-check",
+						url: "https://calendar.google.com/calendar/u/7?cid=cGluZWhpbGxhbGV4YUBnbWFpbC5jb20"
+					}
+				]
+			}
 		},
 		{
 			module: "calendar",
