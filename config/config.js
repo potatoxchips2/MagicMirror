@@ -67,6 +67,7 @@ let config = {
 						url: "https://calendar.google.com/calendar/ical/pinehillalexa%40gmail.com/private-d66054581dafbbcf78d5fb2424fba15e/basic.ics"
                     }
 				]
+                
 			}
 		},
 		{
@@ -93,10 +94,10 @@ let config = {
 		},
 		{
 			module: "weather",
-			position: "top_right",
+			position: "bottom_left",
 			config: {
-				weatherProvider: "openmeteo",
 				type: "current",
+                weatherProvider: "openmetro",
 				locationID: "5096699"
 			}
 		}
