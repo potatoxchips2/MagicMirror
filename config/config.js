@@ -88,7 +88,7 @@ let config = {
     		module: "MMM-MonthlyCalendar",
     		position: "top_center",
     		config: { // See "Configuration options" for more information.
-      			mode: "fourWeeks",
+      			//can change the view//
     		}
 		},
 		{
