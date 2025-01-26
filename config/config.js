@@ -99,17 +99,17 @@ let config = {
 				type: "current",
 				locationID: "5096699"
 			}
-		},
-		{
-			module: "weather",
-			position: "top_right",
-			header: "Weather Forecast",
-			config: {
-				weatherProvider: "openmeteo",
-				type: "forecast",
-				
-			}
 		}
+		// {
+		// 	module: "weather",
+		// 	position: "top_right",
+		// 	header: "Weather Forecast",
+		// 	config: {
+		// 		weatherProvider: "openmeteo",
+		// 		type: "forecast",
+				
+		// 	}
+		// }
 	]
 };
 
