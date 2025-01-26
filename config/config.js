@@ -73,7 +73,7 @@ let config = {
 		{
 			module: "calendar",
 			header: "US Holidays",
-			position: "top_left",
+			position: "top_right",
 			config: {
 				calendars: [
 					{
