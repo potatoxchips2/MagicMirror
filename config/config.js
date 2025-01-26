@@ -69,14 +69,14 @@ let config = {
 				]
 			}
 		},
-		// {
+		{
 			
-    	// 	module: "MMM-MonthlyCalendar",
-    	// 	position: "top_center",
-    	// 	config: { // See "Configuration options" for more information.
-      	// 		mode: "fourWeeks",
-    	// 	}
-		// },
+    		module: "MMM-MonthlyCalendar",
+    		position: "top_center",
+    		config: { // See "Configuration options" for more information.
+      			mode: "fourWeeks",
+    		}
+		},
 		{
 			module: "weather",
 			position: "top_right",
