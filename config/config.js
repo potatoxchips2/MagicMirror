@@ -64,8 +64,8 @@ let config = {
 					{
 						fetchInterval: 7 * 24 * 60 * 60 * 1000, // Weekly fetch
 						symbol: "calendar-check",
-						url: "https://calendar.google.com/calendar/u/7?cid=cGluZWhpbGxhbGV4YUBnbWFpbC5jb20"
-					}
+						url: "https://calendar.google.com/calendar/ical/pinehillalexa%40gmail.com/private-d66054581dafbbcf78d5fb2424fba15e/basic.ics"
+                    }
 				]
 			}
 		},
